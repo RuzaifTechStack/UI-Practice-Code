@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in Html</title>
+    <style>
+        img{
+            margin-right: 10px;
+        }
+        table{
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: rgb(179, 27, 27);
+        }
+    </style>
+</head>
+<body>
+     <table  frame="void" border="1" cellspacing="5" cellpadding="10px"  width="60%">
+        <caption>Leaderboard Run scorer</caption>
+        <colgroup span="1"></colgroup>
+        <thead >
+            <tr height="60">
+                <th width="200">PLAYER</th>
+                <th>INN</th>
+                <th>RUNS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <img align="left" width="25" src="public/images/indian-flag.png" alt=""> Virat Kohli</td>
+                <td>1</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td> <img align="left" width="25" src="public/images/indian-flag.png" alt=""> KL Rahul</td>
+                <td>1</td>
+                <td>97</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td align="center" colspan="3">INN- Innings</td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
