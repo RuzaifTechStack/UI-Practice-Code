@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-size: cover;
+        }
+        .shade{
+            background-color: rgba(0,0,0,0.7);
+            width: 105;
+            height: 100vh;
+            margin: -10px;
+            margin-top: -10px;
+            margin-left: -10px;
+
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            padding: 40px;
+            padding-right:100px
+        }
+        .brand-title{
+            font-size: 30px;
+            font-family: arial;
+            color: red;
+            font-weight: bold;
+        }
+        .language{
+            display: inline-block;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .signin{
+            background-color: red;
+            color: white;
+            font-family: Arial;
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        .title{
+            font-size: 62px;
+            font-family: arial;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-top:120px;
+            width: 100%;
+        }
+        .sub-title{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: arial;
+
+        }
+        section{
+            padding: 60px;
+        }
+        main{
+            color: white;
+            text-align: center;
+            margin-top:20px;
+        }
+        .main-title{
+            font-size: 20px;
+            font-family: arial;
+            margin-bottom: 20px;
+        }
+        .email{
+            display: inline-block;
+            width: 350px;
+            border: 1px solid white;
+            background-color: black;
+            text-align: left;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+        }
+        .btn-start{
+            background-color: red;
+            display: inline-block;
+            color: white;
+            width: 160px;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .second-content{
+            background-color: black;
+            width: 100%;
+            height: 70vh;
+        }
+        .second-div{
+            width: 600px;
+            text-align: center;
+            padding-top: 140px;
+            margin-left: 70px;
+           
+        }
+        .second-main-title{
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: arial;
+        }
+        .second-sub-title{
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body background="public/images/netflix.jpg">
+    <div class="shade">
+        <header>
+           <div>
+             <span class="brand-title">Netflix</span>
+           </div>
+           <div>
+             <span class="language">
+                <span class="bi bi-translate"></span>
+                 English
+                 <span class="bi bi-chevron-down"></span>
+             </span>
+             <span class="signin">Sign in</span>
+           </div>
+        </header>
+        <section>
+            <div class="title">The biggest indian hits. Ready to watch here from 	&#8377; 149.</div>
+            <div class="sub-title">Join today. Cancel anytime.</div>
+            <main>
+              <div class="main-title">Ready to watch? Enter your email to create or restart your membership.
+              </div>
+              <div class="register">
+                <span class="email">Email address</span>
+                <span class="btn-start">Get Started <span class="bi bi-chevron-bar-right"></span></span>
+              </div>
+            </main>
+        </section>
+        <div class="second-content">
+            <div class="second-div">
+               <span class="second-main-title">Enjoy on your TV</span><br>
+                <span class="second-sub-title">Watch on smart TVs,PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
