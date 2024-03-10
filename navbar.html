@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        span{
+            display: inline-block;
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            font-family: arial;
+            font-size: 20px; 
+            padding: 5px;
+        }
+        span:hover{
+            background-color: blue;
+            color: white;
+            cursor: grab;
+        }
+
+        @media screen and (orientation:landscape){
+            nav{
+                display: flex;
+                flex-direction: row;
+            }
+            span{
+                margin-right: 20px;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            nav{
+                display:flex;
+                flex-direction:column;
+            }
+            span{
+                margin-bottom: 20px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="bi bi-house">Home</span>
+        <span class="bi bi-file-break">Pages</span>
+        <span class="bi bi-globe">Blog</span>
+        <span class="bi bi-search">Search</span>
+    </nav>
+</body>
+</html>
