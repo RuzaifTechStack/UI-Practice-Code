@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+        }
+        video{
+            width: 100%;
+            margin-top: 100px;
+        }
+        article{
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <marquee scrollamount="20" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+            <img src="public/images/a1.jpg" width="100" height="100" alt="">
+            <img src="public/images/a2.jpg" width="100" height="100" alt="">
+            <img src="public/images/a3.jpg" width="100" height="100" alt="">
+            <img src="public/images/a1.jpg" width="100" height="100" alt="">
+            <img src="public/images/a2.jpg" width="100" height="100" alt="">
+            <img src="public/images/a3.jpg" width="100" height="100" alt="">
+        </marquee>
+        <marquee scrollamount="20" direction="right" onmouseover="this.stop()" onmouseout="this.start()">
+            <img src="public/images/a1.jpg" width="100" height="100" alt="">
+            <img src="public/images/a2.jpg" width="100" height="100" alt="">
+            <img src="public/images/a3.jpg" width="100" height="100" alt="">
+            <img src="public/images/a1.jpg" width="100" height="100" alt="">
+            <img src="public/images/a2.jpg" width="100" height="100" alt="">
+            <img src="public/images/a3.jpg" width="100" height="100" alt="">
+        </marquee>
+      
+    </section>
+    <main>
+        <video src="public/videos/screen-capture.webm" controls height="300"></video>
+    </main>
+
+    <article>
+        <iframe src="https://www.youtube.com/embed/kiAK3FcwUYA" frameborder="0"></iframe>
+    </article>
+</body>
+</html>
