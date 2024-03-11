@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landkit-template</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            font-size: 25px;
+
+        }
+        .brand-title{
+            font-size: 30px;
+            font-weight: bold;
+            color: blue;
+        }
+        span{
+            margin-right: 25px;
+        }
+        button{
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            width: 90px;
+            font-weight: 700;
+            padding: 10px;
+            font-size: 15px;
+            display: inline-block;
+            text-align: center;
+        }
+        section{
+            height: 500vh;
+        }
+     
+        footer{
+            height: 50vh;
+            background-color: whitesmoke;
+            padding-top: 60px;
+            font-family: arial;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+           
+        }
+        ul{
+            list-style: none;
+           
+        }
+        li{
+            padding-bottom: 20px;
+        }
+        .footer-title{
+            font-size: 15px;
+            padding-left: 35px;
+            font-weight: 700;
+           
+        }
+        .sub-title-footer{
+            padding-left: 20px;
+            padding-top: 10px;
+
+        }
+        .footer-brand{
+            font-size: 30px;
+            color: blue;
+            padding-left: 20px;
+
+        }
+        aside{
+            padding-left: 20px;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+      img{
+        width: 50%;
+        float: right;
+        margin-top: -90px;
+      }
+      main{
+        padding-left: 140px;
+        padding-right: 100px;
+        font-family: arial;
+      }
+      .section-title{
+        font-size: 50px;
+        margin-top: 170px;
+        margin-bottom: 40px;
+      }
+      .section-subtitle{
+        font-size: 25px;
+      }
+      .buttons{
+        margin-top: 40px;
+      }
+      .btn-view{
+        border: 1px solid gray;
+        padding: 10px;
+        display: inline-block;
+        width: 160px;
+        text-align: center;
+        background-color: rgb(68, 0, 255);
+        color: white;
+        
+      }
+      .docx{
+        display: inline-block;
+        width: 160px;
+        border: 1px solid gray;
+        padding: 10px;
+        text-align: center;
+        color: blue;
+      }
+      .section-1{
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        grid-gap: 25px;
+        margin-top: 140px;
+        padding-left: 140px;
+        padding-right: 140px;
+        padding-bottom: 60px;
+      }
+      .icons span{
+        display: inline-block;
+        font-size: 30px;
+        color: rgb(50, 50, 165);
+      }
+      h2{
+        font-weight: 400;
+      }
+      p{
+        font-size: 20px;
+        color: gray;
+      }
+      .brand-logo{
+        background-image: url("public/images/landkit-brand-logo.JPG");
+        background-size: cover;
+        height: 15vh;
+      }
+      .login-section{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        height: 120vh;
+        background-color: rgba(167, 156, 156, 0.048);
+        margin-top: 100px;
+        padding-left: 180px;
+      }
+      .card-img{
+        background-image: url("public/images/landkit-login-img.jpg");
+        background-size: 390px;
+        background-repeat: no-repeat;
+        background-color: rgb(255, 255, 255);
+        height: 90vh;
+        border-radius: 6px;
+        margin-top: 100px;
+        width: 390px;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding-top: 300px;
+        padding-left: 30px;
+      }
+      form input{
+        border:none;
+        height: 40px;
+      }
+      form input:hover{
+        border-bottom: 1px solid blue;
+      }
+      .btn{
+        width: 300px;
+        padding: 10px;
+        margin-top: 20px;
+        height: 60px;
+        font-size: 18px;
+        background-color: rgba(3, 129, 3, 0.664);
+      }
+      .login-title{
+        margin-top: 250px;
+        margin-right: 150px;
+        margin-left: -50px;
+      }
+      .check-icons span{
+        display: inline-block;
+        font-size: 20px;
+        color: green;
+        font-weight: 40;
+        padding: 10px;
+        padding-right: 65px;
+        margin-left: -50px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+          <span class="brand-title">Landkit.</span>
+        </div>
+        <div>
+         <span>Landings</span>
+         <span>Pages</span>
+         <span>Accounts</span>
+         <span>Documentation</span>
+        </div>
+        <div>
+         <button>Buy Now</button>
+        </div>
+
+    </header>
+    <section>
+        <div>
+        <img src="public/images/landkit-section.png" class="img" alt="">
+    </div>
+        <main>
+        <div class="section-title">
+            Welcome to <span><font color="blue">Landkit.</font></span><br>
+             Develop anything.
+        </div>
+        <div class="section-subtitle">Build a beautiful, modern website with flexible Bootstrap components 
+            built from scratch.</div>
+            <div class="buttons">
+                <span class="btn-view">View all pages <span class="bi bi-arrow-right"></span></span>
+                <span class="docx">Documentation</span>
+            </div>
+        </main>
+        <div class="section-1">
+            <div>
+                <div class="icons">
+                  <span class="bi bi-toggle2-off"></span>
+                </div>
+                <div>
+                    <h2>Built for developers</h2>
+                    <p>Landkit is built to make your life easier. Variables, build tooling, documentation,
+                         and reusable components.</p>
+                </div>
+            </div>
+            <div>
+                <div class="icons">
+                 <span class="bi bi-columns-gap"></span>
+                </div>
+                <div>
+                    <h2>Designed to be modern</h2>
+                    <p>Designed with the latest design trends in mind. Landkit feels modern,
+                         minimal, and beautiful.</p>
+                </div>
+            </div>
+            <div>
+                <div class="icons">
+                 <span class="bi bi-code-slash"></span>
+                </div>
+                <div>
+                    <h2>Documentation for everything</h2>
+                   <p>We've written extensive documentation for components and tools,
+                     so you never have to reverse engineer anything.</p>
+                </div>
+            </div>
+        </div>
+         <div class="brand-logo"> </div>
+
+         <div class="login-section">
+            <div>
+                <div class="card-img"> 
+                        <form action="">
+                            <input type="text" placeholder="Name"> <br>
+                            <input type="email" placeholder="Email"> <br>
+                            <input type="password" placeholder="Password"> <br>
+                            <button class="btn">Download a Sample</button>
+                        </form>
+                    </div>
+            </div>
+            <div>
+                <div class="login-title">
+                <div style="font-size: 30px; margin-bottom: 10px;">The most useful resource</div>
+                <div style="font-size: 25px; color: green;">ever created for Developers</div>
+                <p style="font-size: 21px; margin-bottom: 30px; margin-top: 40px;">Using Landkit to build your site means never worrying about designing
+                     another page or cross browser compatibility. Our ever-growing library 
+                    of components and pre-designed layouts will make your life easier.</p>
+                </div>
+                    <div class="check-icons">
+                        <span class="bi bi-check2-circle" > Lifetime updates</span>
+                        <span class="bi bi-check2-circle" > Tech support</span> <br>
+                        <span class="bi bi-check2-circle" > Tons of assets</span>
+                        <span style="padding-left: 33px;" class="bi bi-check2-circle" > Integration ready</span>
+                    </div>
+            </div>
+         </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div>
+              <div class="footer-brand">Landkit.</div>
+              <div class="sub-title-footer">A Better Way To Build.</div>
+              <aside>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-linkedin"></span>
+              </aside>
+            </div>
+            <div>
+                <div class="footer-title">PRODUCTS</div>
+                <ul>
+                    <li>Page Builder</li>
+                    <li>UI Kit</li>
+                    <li>Styleguide</li>
+                    <li> Documentation</li>
+                    <li>Changelog</li>
+                </ul>
+
+            </div>
+            <div>
+                <div class="footer-title">SERVICES</div>
+                <ul>
+                    <li>Documentation</li>
+                    <li>Changelog</li>
+                    <li>Pagebuilder</li>
+                    <li>UI Kit</li>
+                </ul>
+            </div>
+            <div>
+           <div class="footer-title">CONNECT</div>
+               <ul>
+                <li>Page Builder</li>
+                <li>UI Kit</li>
+                <li> Styleguide</li>
+                <li> Documentation</li>
+                <li> Changelog</li>
+                <li> Documentation</li>
+                <li> Changelog</li>
+               </ul>    
+        </div>
+            <div>
+                <div class="footer-title">LEGAL</div>
+                <ul>
+                    <li>Documentation</li>
+                    <li>Changelog</li>
+                    <li>UI Kit</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
