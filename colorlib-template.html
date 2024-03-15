@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Lib Template</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+        header{
+            height: 500px;
+        }
+        section{
+            background-color: white;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin-left: -10px;
+            margin-right: -10px;
+           
+        }
+        .features-title{
+            padding-left: 40px;
+            padding-top: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 50px;
+        }
+       .card{
+        height: 200px;
+        width: 500px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 5px whitesmoke;
+        border: 1px solid white;
+        
+       }
+       .card:hover{
+        background-color: darkcyan;
+        color: white;
+      
+       }
+        .bi {
+            font-size: 90px;
+            padding-left: 25px;
+           display: inline-block;
+           padding-top: 40px;
+           
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        .sub-title{
+            padding-top: 50px;
+            padding-left: 15px;
+            font-size: 20px;
+            color: darkgray;
+        }
+        .sub-title:hover{
+            color: white;
+        }
+        .first-child{
+            display: inline-block;
+            padding-top: 10px;
+           
+        }
+    </style>
+</head>
+<body background="public/images/colorlib.JPG">
+    <header>
+
+    </header>
+    <section>
+        <div>
+            <img src="public/images/colorlib-girl.JPG" class="section-img" width="100%" alt="">
+        </div>
+        <div class="features">
+           <div class="features-title">
+            <span style="color: green;">LEARN ANYTHING</span>
+            <h2>Benefits About Online <br> Learning Expertise</h2>
+           </div>
+           <div class="card">
+            <div class="row">
+                <div>
+                  <span class="bi bi-book-half"></span>
+                </div>
+                <div class="sub-title">
+                 <span style="color: black;">Online Courses</span><br>
+                 <span class="first-child">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>
+            </div>
+
+           </div>
+           <div class="card">
+            <div class="row">
+                <div>
+                  <span class="bi bi-building-dash"></span>
+                </div>
+                <div class="sub-title">
+                 <span style="color: black;">Earn A Certificates</span><br>
+                 <span class="first-child">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>
+            </div>
+
+           </div>
+           <div class="card">
+            <div class="row">
+                <div>
+                  <span class="bi bi-person-add"></span>
+                </div>
+                <div class="sub-title">
+                 <span style="color: black;">Learn with Expert</span><br>
+                 <span class="first-child">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+                </div>
+            </div>
+
+           </div>
+
+
+
+        </div>
+        
+    </section>
+    
+</body>
+</html>
