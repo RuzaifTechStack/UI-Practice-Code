@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        input[type=text]:read-only{
+            cursor: not-allowed;
+        }
+        .password+div{
+            display: none;
+        }
+        .password:focus+div{
+            display: block;
+            color: goldenrod;
+        }
+        button:disabled{
+            cursor: not-allowed;
+            background-color: goldenrod;
+        }
+        .terms+label{
+            color: red;
+        }
+        .terms:checked+label{
+            color: green;
+        }
+        .terms~button{
+            display: none;
+        }
+        .terms:checked~button{
+            display: block;
+        }
+
+        input:required+span{
+            color: red;
+            display: inline;
+        }
+        input:optional+span{
+            display: none;
+        }
+        input:optional{
+            border: 1px solid black;
+        }
+        input:required{
+            border:1px solid red ;
+        }
+
+        input:valid{
+            border: 1px solid green;
+        }
+        input:valid+span{
+            display: none;
+        }
+        input:invalid~div {
+            display: block;
+            color:red;
+        }
+        input:valid~div {
+            display: none;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+     <h2>Register User</h2>
+     <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" value="John" readonly></dd>
+        <dt>Password</dt>
+        <dd>
+            <input type="password" class="password" placeholder="Atleast 1 uppercase required">
+            <div> <span class="bi bi-exclamation-triangle"></span> Atleast 1 uppercase required</div>
+        </dd>
+        <dt>City</dt>
+        <dd><input type="text" value="Delhi" ></dd>
+        <dt>Terms of Service</dt>
+        <dd>
+            <textarea disabled rows="3" cols="30">Our Terms of Service</textarea>
+        </dd>
+        <dd>
+            <input type="checkbox" class="terms"> <label>I Accept</label>
+            <br><br>
+            <button disabled>Login</button>
+        </dd>
+     </dl>
+     <h2>Validation State Classes:</h2>
+     <form>
+        <h2>Register User</h2>
+        <dl>
+           <dt>User Name</dt>
+           <dd><input type="text" class="UserName" required> <span>*</span> </dd>
+           <dt>Password</dt>
+           <dd><input type="password" class="Password" required > <span>*</span> </dd>
+           <dt>Mobile</dt>
+           <dd><input type="text" class="Mobile"> <span>*</span> </dd>
+        </dl>
+        <button>Register</button>
+    </form>
+
+</body>
+</html>
+
