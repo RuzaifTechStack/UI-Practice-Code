@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style: none;
+        }
+        .ol{
+            list-style: none;
+            border: 1px solid gray;
+            padding: 5px;
+            width: 120px;
+            height: 40px;
+            overflow: auto;
+        }
+        .checkbox-list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h3>Courses</h3>
+        <ol>
+            <li><input type="checkbox" name="course" value=".net"><label for="course">.Net</label></li>
+            <li><input type="checkbox" name="course" value="java"><label for="course">Java</label></li>
+            <li><input type="checkbox" name="course" value="web ui"><label for="course">Web UI</label></li>
+        </ol>
+        <button>Submit</button>
+        <br> <br>
+        <h1>checkbox-list</h1>
+        <div class="checkbox-list">
+        
+        <ol class="ol">
+            <li><input type="checkbox" name="course" value=".net"><label for="course">.Net</label></li>
+            <li><input type="checkbox" name="course" value="java"><label for="course">Java</label></li>
+            <li><input type="checkbox" name="course" value="web ui"><label for="course">Web UI</label></li>
+        </ol>
+        <button>Submit</button>
+    </div>
+    </form>
+</body>
+</html>
