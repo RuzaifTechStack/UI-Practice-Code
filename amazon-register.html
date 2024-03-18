@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Register</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            height: 110vh;
+        }
+        form{
+            width: 27.5%;
+        }
+        p{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center">
+    
+    <form action="" name="register" class="bg-white card text-black border border-1 ps-4 pe-4">
+        <h3 class="mb-2 mt-2">Create Account</h3>
+        <div class="mb-2">
+            <label for="" class="form-label">Your Name</label>
+         <div>
+            <input class="form-control" type="text" placeholder="First and Last Name">
+         </div>
+        </div>
+        <div class="mb-2">
+            <label for="" class="form-label">Mobile Number</label>
+            <div class="input-group">
+                <select class="ps-1 select-div input-group-text border rounded-1 w-25" name="" id="">
+                    <option value="">IN+91</option>
+                </select> &nbsp;
+                <input class="ms-2 form-control " type="number" placeholder="mobile number" size="30">
+            </div>
+        </div>
+        <div class="mb-2">
+            <label for="" class="form-label">Email (optional)</label>
+            <div>
+                <input class="form-control" type="email" placeholder="enter your email">
+            </div>
+        </div>
+        <div class="mb-2">
+            <label for="" class="form-label">Password</label>
+            <div>
+                <input class="form-control" type="password" name="password" placeholder="At least 6 characters">
+            </div>
+        </div>
+        <div class="bi bi-question-circle">
+            Passwords must be at least 6 characters.</div>
+            <div class="mt-3">
+                <p>To verify your number, we will send you a text message with a temporary code. Message and data rates may apply.</p>
+            </div>
+            <div class="mt-3">
+                <button class="btn btn-warning w-100">Verify Mobile Number</button>
+            </div>
+        </div>
+        <div class="footer mb-2 mt-4">
+            <p>Already have an account? <a href="">Sign in<span class="bi bi-caret-right-fill"></span></a><br>
+                Buying for work? <a href="">Create a free business account<span class="bi bi-caret-right-fill"></span></a></p>
+        </div>
+        <div class="footer mb-2">
+           <p> By creating an account or logging in, you agree to Amazon’s<a href="">Conditions</a> of Use and <a href="">Privacy Policy.</a> </p>
+        </div>
+    </form>
+</body>
+</html>
