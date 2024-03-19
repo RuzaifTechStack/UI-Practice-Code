@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        @keyframes ZoomEffect
+        {
+            from {
+                font-size: 12px;
+                color: red;
+            }
+
+            to {
+                font-size: 150px;
+                color: red;
+            }
+        }
+        .w {
+            animation-name: ZoomEffect;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .e {
+            animation-name: ZoomEffect;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .l {
+            animation-name: ZoomEffect;
+            animation-duration: 3s;
+            animation-delay: 500ms;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .c {
+            animation-name: ZoomEffect;
+            animation-duration: 2s;
+            animation-delay: 500ms;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .o {
+            animation-name: ZoomEffect;
+            animation-duration: 1s;
+            animation-delay: 500ms;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .m {
+            animation-name: ZoomEffect;
+            animation-duration: 2s;
+            animation-delay: 500ms;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="w">
+        W
+    </div>
+    <div class="e">
+        E
+    </div>
+    <div class="l">
+        L
+    </div>
+    <div class="c">
+        C
+    </div>
+    <div class="o">
+        O
+    </div>
+    <div class="m">
+        M
+    </div>
+    <div class="e">
+        E
+    </div>
+</body>
+</html>
