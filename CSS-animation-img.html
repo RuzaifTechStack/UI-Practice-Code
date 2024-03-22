@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        @keyframes Blink    
+        {
+           from{
+            width: 15px;
+            height: 15px;
+           }
+           50%{
+            width: 200px;
+            height: 200px;
+            transform: rotate(360deg);
+           }
+           70%{
+            transform: translateX(100px)
+           }
+           80%{
+            transform: rotate(360deg);
+           }
+           to{
+            width: 300px;
+            height: 300px;
+           }
+        }
+        img{
+           animation-name: Blink;
+           animation-duration: 4s; 
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <img src="../public/images/a1.jpg"  alt="">
+</body>
+</html>
