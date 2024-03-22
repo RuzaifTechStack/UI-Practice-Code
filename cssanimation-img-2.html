@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        @keyframes ZoomEffect
+        {
+            from{
+                margin-left: 100%;
+            }
+            5% {
+                transform: rotate(10deg);
+            }
+            10% {
+                transform: rotate(-10deg);
+            }
+            15% {
+                transform: rotate(20deg);
+            }
+            20% {
+                transform: rotate(-20deg);
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+            80% {
+                transform: rotate(-20deg);
+            }
+            75% {
+                transform: rotate(20deg);
+            }
+            70% {
+                transform: rotate(10deg);
+            }
+            to {
+                margin-left: 0%;
+            }
+        }
+        img {
+            animation-name: ZoomEffect;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <img src="../public/images/a1.jpg" width="100" height="100">
+</body>
+</html>
