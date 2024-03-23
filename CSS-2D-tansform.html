@@ -1,0 +1,198 @@
+_<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transform</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .translate-1{
+            width: 100%;
+            height: 30vh;
+            border: 2px solid gray;
+            overflow: hidden;
+            background-color: yellow;
+        }
+        .translate{
+            transform: translate(0px, 0px);
+            transition: 3s;
+        }
+        .translate:hover{
+            transform: translate(500px, 100px );
+        }
+        .shopper-img{
+            border: 1px solid red;
+            background-color: beige;
+        }
+        .mens-fashion{
+            width: 450px;
+            height: 400px;
+            overflow: hidden;
+            margin: 10px 0px 0px 250px;
+            position: relative;
+        }
+        .mens-img{
+        transform: translateX(0px);
+        transition: 500ms;
+        }
+        .mens-img:hover{
+            transform: translateX(-15px);
+            transition: 500ms;
+        }
+        button{
+            width: 200px;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            background-color: #ffffffde;
+            font-size: 1.5rem;
+            color: black;
+            position: absolute;
+            top: 250px;
+        }
+        button:hover span{
+            transform: translateX(10px);
+            transition: 500ms;
+            display: inline-block;
+        }
+        .amazon-slide{
+            background-color: aquamarine;
+        }
+        .banner{
+            overflow:hidden;
+        }
+        .slide-2{
+            transform: translateX(1350px);
+            transition: 3s;
+        }
+        .banner:hover .slide-2{
+           transform: translateX(0px);
+           transition: 3s;
+        }
+        .scale-example{
+            display: flex;
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+            background-color: chocolate;
+        }
+        .scale-img{
+            transform: scale(1,1);
+            transition: 2s;
+        }
+        .scale-img:hover{
+            transform: scale(2.5,3);
+            transition: 2s;
+        }
+        .scale-1{
+            overflow: hidden;
+            width: 400px;
+            height: 300px;
+        }
+        .skew-example{
+            border: 1px solid brown;
+            background-color: coral;
+            height: 60vh;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
+        .copy2{
+            transform: skewX(30deg);
+            transition: 2s;
+            margin-left: 0px;
+        }
+        .copy1{
+            transform: skewX(30deg);
+
+        }
+        .copy2:hover{
+            transform: skewX(-30deg);
+            transition: 2s;
+            margin-left: 180px;
+        }
+        .copy2:hover, .copy1{
+            opacity: 0.4;
+        }
+        .img{
+            position: absolute;
+        }
+        .rotate-example{
+            border: 1px solid red;
+            height: 50vh;
+            background-color: antiquewhite;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
+        .rotate-2{
+            transform: rotate(0deg);
+            width: 50px;
+            height: 50px;
+            transition: 2s;
+        }
+        .rotate-2:hover{
+            transform: rotate(-360deg);
+            width: 300px;
+            height: 300px;
+            transition: 4s;
+        }
+        .img-1{
+            position: absolute;
+        }
+        .matrix-example{
+            border: 1px solid black;
+            background-color: blueviolet;
+        }
+        .matrix{
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .matrix-1{
+            transform: matrix(1,0,0,1,0,0);
+            transition: 3s;
+        }
+        .matrix-1:hover{
+            transform: matrix(1,0.4,0,2,200,100);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="translate-1">
+         <img class="translate" src="../public/images/a1.jpg" width="100" height="100" alt="">
+    </div>
+    <div class="shopper-img">
+        <div class="mens-fashion">
+            <img class="mens-img" src="../public/images/men.jpg" width="400" height="400" alt="">
+            <div>
+                <button> Shop Now  <span class="bi bi-arrow-right"> </span></button>
+            </div>
+        </div>
+    </div>
+    <div class="amazon-slide">
+        <div class="banner">
+            <img class="slide-2" src="../public/images/slide-1.jpg" width="100%" height="300" alt="">
+        </div>
+    </div>
+    <div class="scale-example">
+        <div class="scale-1">
+            <img class="scale-img" src="../public/images/a1.jpg" width="200" height="200" alt="">
+        </div>
+    </div>
+    <div class="skew-example">
+        <img class="copy1 img" src="../public/images/men.jpg" width="300" height="300" alt="">
+        <img class="copy2 img" src="../public/images/men.jpg" width="300" height="300" alt="">
+    </div>
+    <div class="rotate-example">
+        <img class="rotate-1 img-1" src="../public/images/men.jpg" width="300" height="300" alt="">
+        <img class="rotate-2 img-1" src="../public/images/men.jpg" width="300" height="300" alt="">
+    </div>
+    <div class="matrix-example">
+        <div class="matrix">
+            <img class="matrix-1 " src="../public/images/men.jpg" width="300" height="300" alt="">
+        </div>
+    </div>
+</body>
+</html>
