@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+       <h1 style="text-align: center;">Shopper.</h1>
+       <ul class="nav nav-tabs">
+         <li class="nav-item"><a class="nav-link active" href="#login" data-bs-toggle="tab"><span>Login</span></a></li>
+         <li class="nav-item"><a class="nav-link" href="#register" data-bs-toggle="tab"><span>Register</span></a></li>
+         <li class="nav-item"><a class="nav-link" href="#recover" data-bs-toggle="tab"><span>Recover</span></a></li>
+       </ul>
+       <div class="tab-content mt-3">
+         <div class="tab-pane active" id="login">
+            <dl>
+                <dt>UserName</dt>
+                <dd><input type="text"></dd>
+                <dt>Password</dt>
+                <dd><input type="password"></dd>
+            </dl>
+            <button class="btn btn-primary">Login</button>
+         </div>
+         <div class="tab-pane" id="register">
+            <dl>
+                <dt>UserName</dt>
+                <dd><input type="text"></dd>
+                <dt>Password</dt>
+                <dd><input type="password"></dd>
+                <dt>Email</dt>
+                <dd><input type="email" placeholder="enter your email"></dd>
+                <dt>Mobile</dt>
+                <dd><input type="text"></dd>
+            </dl>
+            <button class="btn btn-primary">Register</button>
+         </div>
+         <div class="tab-pane" id="recover">
+              <h3>Forget Password</h3>
+              <input type="text" placeholder="Your email or mobile">
+            <button class="btn btn-primary">Recover</button>
+         </div>
+       </div>
+     <script src="../node_modules/jquery/dist/jquery.js"></script>
+     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
