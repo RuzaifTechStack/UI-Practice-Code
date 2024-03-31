@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function SubmitClick(){
+            var otp = document.getElementById("txtname").value;
+            if(otp==="4567"){
+                location.href = "../Register-form.html";
+            }else{
+                location.href = "./error.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Enter OTP</dt>
+        <dd>
+            <input type="text" size="5" id="txtname">
+        </dd>
+    </dl>
+    <button onclick="SubmitClick()">Submit</button>
+</body>
+</html>
