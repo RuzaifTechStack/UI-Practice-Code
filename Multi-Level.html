@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function PayClick(){
+            var card = document.getElementById("card").value;
+            var CVV = document.getElementById("cvv").value;
+            var Expiry = document.getElementById("expiry").value;
+            var msg = document.querySelector("p");
+
+            if(card==="4444555566667894"){
+               if(CVV==="456"){
+                 if(Expiry==="2024"){
+                   document.write("<h2>Payment Success</h2>");
+                 }else{
+                    msg.innerHTML = "Invalid Expiry".fontcolor('red');
+                 }
+               }else{
+                msg.innerHTML = "Invalid Cvv".fontcolor('red');
+               }
+            }else{
+                msg.innerHTML = "Invalid Card".fontcolor('red');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Payment Details</legend>
+        <dl>
+            <dt>Card Number</dt>
+            <dd>
+                <input type="text" id="card">
+            </dd>
+           <div id="cvvcontainer">
+            <dt>CVV</dt>
+            <dd><input type="text" id="cvv"></dd>
+           </div>
+           <div id="expirycontainer" >
+            <dt>Expiry Date</dt>
+            <dd>
+                <select id="expiry">
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                </select>
+            </dd>
+           </div>
+        </dl>
+        <button id="btnpay" onclick="PayClick()">Pay</button>
+    </fieldset>
+    <p align="center"></p>
+</body>
+</html>
