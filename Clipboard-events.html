@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CopyNumber(){
+            document.getElementById("msg").innerHTML = "Account Number Copied".fontcolor('red');
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Your Account Number</dt>
+        <dd><input type="text" oncopy="CopyNumber()"></dd>
+        <dd id="msg"></dd>
+        <dt>Confirm Account Number</dt>
+        <dd><input type="text" onpaste="return false" placeholder="You Can't Paste Here"></dd>
+    </dl>
+</body>
+</html>
